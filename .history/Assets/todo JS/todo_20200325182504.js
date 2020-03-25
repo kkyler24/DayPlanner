@@ -9,10 +9,10 @@ $("li").dblclick(function () {
         else{
             $(this).css({
             color: "rgb(11, 209, 170)",
-            textDecoration: "none",
-            fontWeight: "bold"
+            textDecoration: "none"
         });
     }
+
 });
 
 $("li").click(function () {

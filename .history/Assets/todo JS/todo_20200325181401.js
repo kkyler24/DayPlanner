@@ -1,18 +1,14 @@
 // check off to do list items and change colors for different stages// in progress<--
 $("li").dblclick(function () {
-        if($(this).css("color") === "rgb(11, 209, 170)"){
-            $(this).css({
-                color: "gray",
-                textDecoration: "line-through"
-            });
-        }
-        else{
-            $(this).css({
-            color: "rgb(11, 209, 170)",
-            textDecoration: "none",
-            fontWeight: "bold"
-        });
-    }
+    $(this).css({
+        color: "green",
+        fontWeight: "bold"
+        // gives strikethrough on double click How do we remove that?
+        $(this).css({
+            color: "gray",
+            textDecoration: "line-through"
+    });
+
 });
 
 $("li").click(function () {
@@ -21,7 +17,6 @@ $("li").click(function () {
         $(this).css({
             color: "black",
             textDecoration: "none"
-        });
     }
     else{
         $(this).css({
@@ -29,4 +24,4 @@ $("li").click(function () {
         textDecoration: "line-through"
     });
 }
-});
+})

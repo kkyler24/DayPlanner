@@ -2,17 +2,17 @@
 $("li").dblclick(function () {
         if($(this).css("color") === "rgb(11, 209, 170)"){
             $(this).css({
-                color: "gray",
-                textDecoration: "line-through"
+                color: "rgb 11, 209, 170",
+                textDecoration: "none"
             });
         }
         else{
             $(this).css({
-            color: "rgb(11, 209, 170)",
-            textDecoration: "none",
-            fontWeight: "bold"
+            color: "gray",
+            textDecoration: "line-through"
         });
     }
+
 });
 
 $("li").click(function () {
