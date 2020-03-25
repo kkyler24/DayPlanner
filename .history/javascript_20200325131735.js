@@ -78,4 +78,3 @@ function next(){
     showCalendar (currentMonth, currentYear);
 
 }
-// To do list set up
