@@ -1,11 +1,10 @@
-// check off to do list items and change colors for different stages// in progress<--
+// check off to do list items and change colors for different stages
 $("li").dblclick(function(){
    $(this).css({
        color:"green",
        fontWeight: "bold"
-// gives strikethrough on double click How do we remove that?
     });
-
+// in progress<--
 });
 
 $("li").click(function(){
