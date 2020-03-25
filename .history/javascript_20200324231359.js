@@ -15,22 +15,16 @@ function showCalendar(month, year){
     let firstDay =(new Date(year, month)).getDay();
     let daysInMonth = 32- new Date(year, month, 32).getDate();
 
-    // -->body of the Calendar<--
     let tbl = document.getElementById("calendar-body");
 
-
-// -->clear previous cells, for new month<--
     tbl.innerHTML="";
 
     monthAndYear.innerHTML= months[months]+" "+ year;
 
-    // --> create cells for Calendar<--
     let date = 1;
+
     for(let i = 0; i < 6; i++){
         let row  = document.createElement("tr");
-        // --> creating table rows. not really sure about the 6 part. inquire why you need a 6 and not a 7-->
-
-        // creating indivdual cells, and putting data in them. 
 
         for(let j = 0; j < 7; j++){
             if(i===0 && j< firstDay){
@@ -38,19 +32,12 @@ function showCalendar(month, year){
                 let cellText = document.createTextNode("");
                 cell.appendChild(cellText);
                 row.appendChild(cell);
-            }
-            else if(date > daysInMonth)
+            }else if(date> daysInMonth)
              { break;
 
-        } 
-        else {
+        } else {
             let cell = document.createElement("td");
             let cellText = document.createTextNode(date);
-            if(date ===today.getDate() && year === today.getFullYear() && month === today.getMonth()){
-                cell.classList.add
-                // --> bootstrap colors, try to get a wider variety of colors <--
-                ("bg-info");
-            }
             cell.appendChild(cellText);
             row.appendChild(cell);
 

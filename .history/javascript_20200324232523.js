@@ -38,19 +38,12 @@ function showCalendar(month, year){
                 let cellText = document.createTextNode("");
                 cell.appendChild(cellText);
                 row.appendChild(cell);
-            }
-            else if(date > daysInMonth)
+            }else if(date> daysInMonth)
              { break;
 
-        } 
-        else {
+        } else {
             let cell = document.createElement("td");
             let cellText = document.createTextNode(date);
-            if(date ===today.getDate() && year === today.getFullYear() && month === today.getMonth()){
-                cell.classList.add
-                // --> bootstrap colors, try to get a wider variety of colors <--
-                ("bg-info");
-            }
             cell.appendChild(cellText);
             row.appendChild(cell);
 
