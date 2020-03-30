@@ -1,0 +1,7 @@
+.container{
+    margin-right: 150px;
+    margin-top: 3rem;
+    float: left;
+    border: 2px solid teal;
+    border-radius: 10px;
+}

@@ -12,8 +12,8 @@
 <body>
 <Main>
 todo list Set up
-<!--  -->
-<Div style="display: none">
+<!-- style="display: none" -->
+<Div>
 <Section>
     <div id="ContainerTodo">
         <H1>Today's To-Do List</H1>
@@ -98,73 +98,118 @@ todo list Set up
 
 <!-- <----Scheduler -->
 </Div>
-<div id="date"></div>
-<div>
-    <form onsubmit="timeSubmit(event)">
-    <div class="column-small left">9 am</div>
-    <input class="column-large middle" placeholder="what do you want to save?"/>
-    <button type="submit" class="column-small right button"><strong>Submit</strong></button>
-    </form>
-    <form onsubmit="timeSubmit(event)">
-    <div class="column-small left">10 am</div>
-    <input class="column-large middle" placeholder="what do you want to save?">
-    <button class="column-small right button"><strong>Submit</strong></button>
-    </form>
-    <form onsubmit="timeSubmit(event)">
-    <div class="column-small left">11 am</div>
-    <input class="column-large middle" placeholder="what do you want to save?">
-    <button class="column-small right button"><strong>Submit</strong></button>
-    </form>
-    <form onsubmit="timeSubmit(event)">
-    <div class="column-small left">12 pm</div>
-    <input class="column-large middle" placeholder="what do you want to save?">
-    <button class="column-small right button"><strong>Submit</strong></button>
-    </form>
-    <form onsubmit="timeSubmit(event)">
-    <div class="column-small left">1 pm</div>
-    <input class="column-large middle" placeholder="what do you want to save?">
-    <button class="column-small right button"><strong>Submit</strong></button>
-    </form>
-    <form onsubmit="timeSubmit(event)">
-    <div class="column-small left">2 pm</div>
-    <input class="column-large middle" placeholder="what do you want to save?">
-    <button class="column-small right button"><strong>Submit</strong></button>
-    </form>
-    <form onsubmit="timeSubmit(event)">
-    <div class="column-small left">3 pm</div>
-    <input class="column-large middle" placeholder="what do you want to save?">
-    <button class="column-small right button"><strong>Submit</strong></button>
-    </form>
-    <form onsubmit="timeSubmit(event)">
-    <div class="column-small left">4 pm</div>
-    <input class="column-large middle" placeholder="what do you want to save?">
-    <button class="column-small right button"><strong>Submit</strong></button>
-    </form>
-    <form onsubmit="timeSubmit(event)">
-    <div class="column-small left">5 pm</div>
-    <input class="column-large middle" placeholder="what do you want to save?">
-    <button class="column-small right button"><strong>Submit</strong></button>
-    </form>
-    <form onsubmit="timeSubmit(event)">
-    <div class="column-small left">6 pm</div>
-    <input class="column-large middle" placeholder="what do you want to save?">
-    <button class="column-small right button"><strong>Submit</strong></button>
-    </form>
-    <form onsubmit="timeSubmit(event)">
-    <div class="column-small left">7 pm</div>
-    <input class="column-large middle" placeholder="what do you want to save?">
-    <button class="column-small right button"><strong>Submit</strong></button>
-    </form>
-    <form onsubmit="timeSubmit(event)">
-    <div class="column-small left">8 pm</div>
-    <input class="column-large middle" placeholder="what do you want to save?">
-    <button class="column-small right button"><strong>Submit</strong></button>
-    </form>
-    <form onsubmit="timeSubmit(event)">
-    <div class="column-small left">9 pm</div>
-    <input class="column-large middle" placeholder="what do you want to save?">
-    <button class="column-small right button"><strong>Submit</strong></button>
-    </form>
+<Div class="d-flex justify-content-center" style="display: none">
+    <div class="container workday ">
+        <div id="time8am"class="row">
+          <div class="col-2">
+            One of three columns
+          </div>
+          <div class="col-8" style="background-color:aqua">
+            One of three columns
+          </div>
+          <div class="col-2">
+            One of three columns
+          </div>
+        </div>
+        <div id="time9am" class="row">
+            <div class="col-sm">
+              One of three columns
+            </div>
+            <div id="input9am" class="col-sm">
+              One of three columns
+            </div>
+            <div class="col-sm">
+              One of three columns
+            </div>
+          </div>
+          <div id="time10am" class="row">
+            <div class="col-sm">
+              One of three columns
+            </div>
+            <div class="col-sm">
+              One of three columns
+            </div>
+            <div class="col-sm">
+              One of three columns
+            </div>
+          </div>
+          <div id="time11am" class="row">
+            <div class="col-sm">
+              One of three columns
+            </div>
+            <div class="col-sm">
+              One of three columns
+            </div>
+            <div class="col-sm">
+              One of three columns
+            </div>
+          </div>
+          <div id="time12pm" class="row">
+            <div class="col-sm">
+              One of three columns
+            </div>
+            <div class="col-sm">
+              One of three columns
+            </div>
+            <div class="col-sm">
+              One of three columns
+            </div>
+          </div>
+          <div id="time1pm" class="row">
+            <div class="col-sm">
+              One of three columns
+            </div>
+            <div class="col-sm">
+              One of three columns
+            </div>
+            <div class="col-sm">
+              One of three columns
+            </div>
+          </div>
+          <div id="time2pm" class="row">
+            <div class="col-sm">
+              One of three columns
+            </div>
+            <div class="col-sm">
+              One of three columns
+            </div>
+            <div class="col-sm">
+              One of three columns
+            </div>
+          </div>
+          <div id="time3pm" class="row">
+            <div class="col-sm">
+              One of three columns
+            </div>
+            <div class="col-sm">
+              One of three columns
+            </div>
+            <div class="col-sm">
+              One of three columns
+            </div>
+          </div>
+          <div id="time4pm" class="row">
+            <div class="col-sm">
+              One of three columns
+            </div>
+            <div class="col-sm">
+              One of three columns
+            </div>
+            <div class="col-sm">
+              One of three columns
+            </div>
+          </div>
+          <div id="time5pm" class="row">
+            <div class="col-sm">
+              One of three columns
+            </div>
+            <div class="col-sm">
+              One of three columns
+            </div>
+            <div class="col-sm">
+              One of three columns
+            </div>
+          </div>
       </div>
 
     </Div>
