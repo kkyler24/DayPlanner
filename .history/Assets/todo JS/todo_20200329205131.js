@@ -33,6 +33,9 @@ $("li").click(function () {
 
 // --->planner<--
 
+// const currentTime = moment().format("H");
+//     console.log(currentTime);
+
 var date = document.getElementById("date");
 var dateOfMonth = moment().date(String).local().format("dddd, MMMM Do YYYY");
 var presentTime; 
@@ -48,41 +51,6 @@ function timeSubmit(evt){
     console.log(key);
 }
 var left = document.getElementsByClassName("left");
-var timeArray = [...document.querySelectorAll('.left')];
-var input = [...document.querySelectorAll('.middle')];
-
-var presentTime = moment().format('h');
-
-timeArray.forEach(function(element){
-    var time = $(element);
-    var times = time.siblings()[0];
-    var text = time.html();
-    if (text.length === 4){
-        text = text.slice(0,1);
-    } else if
-    (text.length === 5){
-        text = text.slice(0,2);
-    }
-    if (text > presentTime){
-        times.setAttribute("class", "future");
-    } else if (text < presentTime){
-        times.setAttribute("class", "past");
-    } else if (text === presentTime){
-        times.setAttribute("class", "present");
-    }
-})
-array.forEach(function(element){
-    var text = element.innerHTML;
-    if (text.length === 4){
-        text = text.slice(0,1);
-    } else if
-    (text.length === 5){
-        text = text.slice(0,2);
-    }
-    if (text > presentTime){
-
-    }
-})
 var text;
 var textArr = [];
 for (var i = 0; i < left.length; i++){
@@ -100,11 +68,3 @@ textArr.forEach(function(element){
     newElement = element.concat("00");
     console.log(newElement);
 })
-
-
-textArr.forEach(function(time){
-    if(presentTime > time){
-
-    }
-})
-

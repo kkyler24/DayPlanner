@@ -64,11 +64,11 @@ timeArray.forEach(function(element){
         text = text.slice(0,2);
     }
     if (text > presentTime){
-        times.setAttribute("class", "future");
+        times.setAttribute("class", "column-large middle future");
     } else if (text < presentTime){
-        times.setAttribute("class", "past");
+        times.setAttribute("class", "column-large middle past");
     } else if (text === presentTime){
-        times.setAttribute("class", "present");
+        times.setAttribute("class", "column-large middle present");
     }
 })
 array.forEach(function(element){

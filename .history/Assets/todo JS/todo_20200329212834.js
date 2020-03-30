@@ -48,40 +48,9 @@ function timeSubmit(evt){
     console.log(key);
 }
 var left = document.getElementsByClassName("left");
-var timeArray = [...document.querySelectorAll('.left')];
-var input = [...document.querySelectorAll('.middle')];
-
-var presentTime = moment().format('h');
-
-timeArray.forEach(function(element){
-    var time = $(element);
-    var times = time.siblings()[0];
-    var text = time.html();
-    if (text.length === 4){
-        text = text.slice(0,1);
-    } else if
-    (text.length === 5){
-        text = text.slice(0,2);
-    }
-    if (text > presentTime){
-        times.setAttribute("class", "future");
-    } else if (text < presentTime){
-        times.setAttribute("class", "past");
-    } else if (text === presentTime){
-        times.setAttribute("class", "present");
-    }
-})
-array.forEach(function(element){
-    var text = element.innerHTML;
-    if (text.length === 4){
-        text = text.slice(0,1);
-    } else if
-    (text.length === 5){
-        text = text.slice(0,2);
-    }
-    if (text > presentTime){
-
-    }
+left.forEach(function(element){
+    var time = element.innerHTML.slice(0,1);
+    console.log(time);s
 })
 var text;
 var textArr = [];

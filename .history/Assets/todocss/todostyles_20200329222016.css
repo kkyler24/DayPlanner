@@ -30,7 +30,7 @@ Planner
   border-radius: 2.5px;
 }
 .column-large {
-  flex-grow: 10;
+  flex-grow: 12;
   display: inline-block;
   text-align: center;
 }
