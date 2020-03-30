@@ -33,5 +33,5 @@ $("li").click(function () {
 
 // --->planner<--
 
-// const currentTime = moment().format("H");
-//     console.log(currentTime);
+const currentTime = moment().format("H");
+    console.log(currentTime);
