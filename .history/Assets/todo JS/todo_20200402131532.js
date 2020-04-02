@@ -34,15 +34,3 @@ $("li").click(function () {
 
 
 // Planner-->
-
-$(".btn-save").on("click", function(){
-   var time = $(this).attr("data-time");
-   var note = $('input[data-input='+time+']').val()
-//    we are selecting a input with a specific attr of time, and retrieving the value of the input. 
-localStorage.setItem("note-input" + time, note);
-// this sets the Item from input into local storage. 
-console.log(note);
-   console.log(time);
-}
-)
-
