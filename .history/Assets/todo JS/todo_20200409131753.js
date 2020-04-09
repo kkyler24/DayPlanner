@@ -46,15 +46,3 @@ console.log(note);
 }
 )
 
-let currentDay = moment().format("MM-DD-YYYY");
-console.log(currentDay);
-$("#currentDay").html(currentDay);
-let militaryTime = moment().format("HH");
-console.log(militaryTime);
-
-$("input[data-input]").each(function (){
-    var time = $(this).attr('data-input')
-   var note = localStorage.getItem("note-input" + time);
-    $('input[data-input='+time+']').val(note);
-    // take the note and updates the input, comparision is going inside this loop
-});
