@@ -1,10 +1,10 @@
 # DayPlanner
 Underconstruction comeback later
 My process
-create calendar
+create possible calendar
 --three basics--
 1. after I CREATE the inital calendar,
-2. i need to make it interactive
+2. I need to make it interactive
 3. then i need to add a todo list
 4. Bells and Whistles
     a. themes? 
@@ -30,6 +30,8 @@ Break down
         1. What type of list? 
             a. organized list with indents and space for notes
             b.Do we want reminders?   -->
+    How to connect the planner to the to do list.
+  Day Planner
     c. each row, need to compare current time to row association 
         1. the input should change depending on time
             a. red = current time
